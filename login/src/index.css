@@ -16,7 +16,10 @@ input,button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(193, 199, 197);
+  background-color: rgb(194, 193, 199);
+  background-image: url(../src/style/img/bg_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 form:after {
@@ -29,8 +32,6 @@ form:after {
   bottom: -5px;
   z-index: 1;
   background-image: linear-gradient(to bottom right, #FFCE01);
-
-
 }
 form .form-inner {
   position: relative;
