@@ -39,6 +39,7 @@ form .form-inner {
   background-color: #FFF;
   padding: 30px;
   z-index: 2;
+  border-radius: 5%;
 }
 
 form .form-inner h2{

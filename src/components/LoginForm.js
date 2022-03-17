@@ -28,21 +28,18 @@ function LoginForm({ Login, error}) {
                   <div ><a href='#' className='login-text'>Quên mật khẩu ?</a></div>
               </div>
                   <div className='login-flex'>
-                        <div className='lang'>Tiếng việt</div>
-                        <div className='lang'>Tiếng anh</div>
+                        <div className='lang'>Tiếng việt</div><img id="flag-vn" src="https://online.bvsc.com.vn/sso/images/vietnam.svg"/>
+                        <div className='lang'>Tiếng anh</div><img id="flag-us" src="https://online.bvsc.com.vn/sso/images/uk.svg"/>
                   </div>
               <div className='form-group-flex'>
                  <div className="row">
                     <div className="col">
                         <div className="language" >
-                            <img id="flag-vn" src="https://online.bvsc.com.vn/sso/images/vietnam.svg"/>
-                            <span>Việt Nam</span>
+
                         </div>
                     </div>
                     <div className="col">
                         <div className="language" >
-                            <img id="flag-us" src="https://online.bvsc.com.vn/sso/images/uk.svg"/>
-                            <span>English</span>
                         </div>
                     </div>
                 </div>  

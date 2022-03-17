@@ -1,7 +1,18 @@
 import React, {useState} from "react";
 import LoginForm from './components/LoginForm';
-
+import styled,{ThemeProvider} from "styled-components";
+import { lightTheme , darkTheme, GlobalStyles} from "./Home/theme";
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const StyledApp = styled.div`
+         color: ${(props) => props.theme.fontColor};
+  `;
+  
+  const themeToggle = () => {
+    theme === "light" ? setTheme("dark"): setTheme("Light");
+  };
+
   const adminUser = {
     email: "admin@gmail.com",
     password: "admin123"
@@ -31,6 +42,9 @@ function App() {
   }
 
   return (
+    <ThemeProvider theme = {theme === "light" ? lightTheme: darkTheme}>
+      <StyledApp> 
+      </StyledApp>
     <div className="App">
       {(user.email !="")?(
         <div className="welcome">
@@ -42,6 +56,7 @@ function App() {
       )}
   
     </div>
+    </ThemeProvider>
   );
 }
 

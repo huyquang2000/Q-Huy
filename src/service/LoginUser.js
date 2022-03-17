@@ -1,15 +1,13 @@
-const userInfo = [
+export const users = [
     {
         name: 'quanghuy',
         password: 'huy123',
-        themeDefault: 'DARK',
-        language:'VI',
+       
     },
     {
         name: 'binh',
         password: '123binh',
-        themeDefault: 'LIGHT',
-        language:'EN',
+        
     }
 ]
 
