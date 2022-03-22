@@ -1,12 +1,12 @@
 export const users = [
     {
-        name: 'quanghuy',
+        username: '001C',
         password: 'huy123',
        
     },
     {
-        name: 'binh',
-        password: '123binh',
+        username: '002C',
+        password: 'abc',
         
     }
 ]

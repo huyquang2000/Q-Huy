@@ -2,21 +2,20 @@ import React, { useState } from 'react';
 
 import './Login.css';
 function LoginForm({ Login, error}) {
-    const [details, setDetails] = useState({name:"", password:""});
+    const [details, setDetails] = useState({username:"", password:""});
 
     const submitHandler = e => {
         e.preventDefault();
         Login(details);
     }
+    
   return (
       <form onSubmit={submitHandler}>
           <div className="form-inner">
-              <div className='logo'></div>
               <h2>BẢO VIỆT SECURITY</h2>
-      
               <div className="form-group">
                   <label htmlFor="name">Name:</label>
-                  <input type="text" name="name" id="name" onChange={e => setDetails({...details, name: e.target.value})} value={details.name} />
+                  <input type="text" name="name" id="name" onChange={e => setDetails({...details, username: e.target.value})} value={details.username} />
               </div>
               <div className="form-group">
                   <label htmlFor="password" >Password</label>
@@ -34,13 +33,10 @@ function LoginForm({ Login, error}) {
               <div className='form-group-flex'>
                  <div className="row">
                     <div className="col">
-                        <div className="language" >
-
-                        </div>
+                        <div className="language" ></div>
                     </div>
                     <div className="col">
-                        <div className="language" >
-                        </div>
+                        <div className="language" ></div>
                     </div>
                 </div>  
                 <hr id="line" />

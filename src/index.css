@@ -5,10 +5,15 @@
 }
 
 input,button {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
+  width: 15%;
+   height: 15px;
+   border: none;
+   color: white;
+   background-color: rgb(21, 76, 158);
+   border-radius: 20px;
+   outline: none;
+   box-shadow: inset 0 0 0 0 rgb(9, 133, 235);
+  
 }
 
 .App{
@@ -81,3 +86,34 @@ form .submit {
   border-radius: 8px;
   background-color: #FFCE01;
 }
+
+
+
+.marquee-header{
+  color: #fff;
+}
+
+.marquee-item{
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+
+}
+
+.marquee-item:nth-child(2n+0){
+  margin-right: 50px;
+
+}
+
+.marquee-item:nth-child(2n+1){
+  color: #ffd622;
+}
+#switchtheme, #lang{
+  margin-left: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+
