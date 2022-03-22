@@ -1,4 +1,4 @@
-import { LOG_IN } from "../actions/loginActions";
+import { LOG_IN } from "../action/loginAction";
 const initState = {
     Login: {
         "username": localStorage.getItem("username"),
