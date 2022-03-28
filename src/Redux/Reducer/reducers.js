@@ -1,4 +1,4 @@
-import { LOG_IN, LOG_OUT, SWITCH_THEME,CHANGE_LANG,GET_USER, GET_USER_NAME } from '../../Const/const'
+import { LOG_IN, LOG_OUT, SWITCH_THEME,CHANGE_LANG,GET_USER, GET_USER_NAME } from '../Action/actionTypes'
 const initialSate = {
     Login: {
         isLogin: false,

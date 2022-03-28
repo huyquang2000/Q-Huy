@@ -1,4 +1,4 @@
-import { LOG_IN,LOG_OUT,SWITCH_THEME,CHANGE_LANG, GET_USER } from "../../Const/const"
+import { LOG_IN,LOG_OUT,SWITCH_THEME,CHANGE_LANG, GET_USER } from "./actionTypes"
 
 export const Loginredux = (data,) => {
     return{
