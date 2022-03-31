@@ -1,0 +1,39 @@
+{
+    "head": {
+        "1": "Putthrought TransVol: ",
+        "2": "1.984.252 billion",
+        "3": "Oddlot TransVal: ",
+        "4":"12.558.999 billion",
+        "5":"Putthrought TransVal: ",
+        "6":"1.235.468 billion",
+        "7": "TransVol: ",
+        "8":"61.192.002 billion",
+        "9": "TransVal: ",
+        "theme": "Appearance",
+        "light": "Light",
+        "dark": "Dark",
+        "lang": "Language",
+        "logout" : "Logout"
+    },
+    "login": {
+        "account_input": "Username",
+        "password_input": "Password",
+        "error": "Wrong account or password",
+        "try_again": "Please try again",
+        "btn_login": "Login",
+        "open_newacc":"Open new account",
+        "forgot_pw": "Forgot password ? ",
+        "vi_lang": "Vietnamese",
+        "en_lang": "English",
+        "contact": "Contact: (84-24) 3928 8080 - ext.699/(84-28) 3914 6888"
+    },
+    "foot": {
+        "btn_setcommand": "Quick order",
+        "btn_priceboard": "Price board",
+        "DVCS": "Stock market: Price :",
+        "KL": "Volumn",
+        "DVTTPS": "- Derivative market: Price :",
+        "DVTTKL" : "- Odd lot market"
+
+    }
+}

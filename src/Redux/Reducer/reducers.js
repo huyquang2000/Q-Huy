@@ -3,19 +3,22 @@ const initialSate = {
     Login: {
         isLogin: false,
         usernumber:'',
-        username:''
+        username:'',
+        table_tab: 'Hose'
     },
     Theme: {
         themeMode: 'dark'
     },
     Lang:{
-        langis:'vie'
-    }
-
+        langis:'vi'
+    },
+    ShowHide: {
+        isShow: false
+    },
 }
 
 const Reducer = (state = initialSate, action) => {
-    // console.log(state, action);
+    
     switch (action.type) {
         case LOG_IN:
             return {

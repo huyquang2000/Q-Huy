@@ -4,6 +4,7 @@ import { users } from '../../Data/Userdata';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Loginredux } from '../../Redux/Action/actions'
+import { useTranslation } from 'react-i18next';
 import { GetUser } from '../../Redux/Action/actions';
 import './Login.css';
 function Login() {
@@ -23,6 +24,7 @@ function Login() {
             setError("Fail")
         }
     }
+    const { t, i18n } = useTranslation();
     useEffect(() => {
         document.title = "Đăng nhập"
     }, [])

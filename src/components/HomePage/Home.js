@@ -11,14 +11,14 @@ import home_light from '../../assets/img/home_light.png'
 import '../HomePage/Home.scss';
 import { useTranslation } from 'react-i18next';
 import '../changeLanguage/i18n'
-
+// import PriceBoard from '../priceBoard/Header/priceBoard1';
 
 function Home() {
   useEffect(() => {
     document.title = "Bảng giá BVSC"
   }, [])
   const clock = {
-    color: "white", fontSize: "1.2rem"
+    color: "white", fontSize: "1.1rem"
   }
   const profileicon = {
     color: "white", fontSize: "1.5em"
@@ -45,19 +45,12 @@ function Home() {
   const [lang, setLang] = useState(langMode)
  
   const handleLang = (e) => {
-    if(lang === 'vi'){
-      setLang(e.target.value)
-      dispatch(SwitchLang(
-       e.target.value
-    ))
-    } else if(lang === 'en') {
-      i18n.changeLanguage('en');
-      setLang(e.target.value);
-      dispatch(SwitchLang(
+    setLang(e.target.value)
+    i18n.changeLanguage(e.target.value)
+    dispatch(SwitchLang(
         e.target.value
-      ))
-    }
-  }
+    ))
+}
 
   const dispatch = useDispatch();
   const hadleLogout = () => {
@@ -70,7 +63,6 @@ function Home() {
   const toggleshowlist = () => {
     if (showlist == false) {
       setShowlist(true)
-      // dispatch(GetUser('001C'))
     } else {
       setShowlist(false)
     }
@@ -82,6 +74,7 @@ function Home() {
   const Accountdropdown = () => {
     return (
       <div className='account-dropdownlist'>
+         {/* <PriceBoard /> */}
         <div className={checked === 'dark' ? 'wrap-pane-setting-dark' : 'wrap-pane-setting-light'}>
           <div className='usernumber'> {User}</div>
           <div className='setting-box'>
@@ -104,11 +97,11 @@ function Home() {
               <h5>{t("head.lang")}</h5>
               <div className='setting-pane'>
                 <div className='setting-option'>
-                  <input type='radio' name='radio_lang' value='vie' checked={lang === 'vie'} onChange={ handleLang } />
+                  <input type='radio' name='radio_lang' value='vi' checked={lang === 'vi'} onChange={ handleLang } />
                   <span></span><img id="flagvn" src="https://online.bvsc.com.vn/sso/images/vietnam.svg"/>
                 </div>
                 <div className='setting-option'>
-                  <input type='radio' name='radio_lang' value='eng' checked={lang === 'eng'} onChange={ handleLang } />
+                  <input type='radio' name='radio_lang' value='en' checked={lang === 'en'} onChange={ handleLang } />
                   <span></span><img id="flagus" src="https://online.bvsc.com.vn/sso/images/uk.svg"/>
                 </div>
               </div>
@@ -256,18 +249,19 @@ function Home() {
           </body>
           <div class="footer">
            <div className="footer-item">
-             <span className="dv">Đơn vị cơ sở : Giá</span><span className="sl">x1000</span>
-             <span className="dv">Khối lượng : </span><span className="sl">x10</span>
-             <span className="dv">- Đơn vị TT phái sinh : Giá</span><span className="sl">x1</span>
-             <span className="dv">Khối lượng : </span><span className="sl">x1</span>
-             <span className="dv">- Đơn vị TT khối lẻ : Khối lượng</span><span className="sl">x1</span>
+             <span className="dv">{t('foot.DVCS')}</span><span className="sl">x1000</span>
+             <span className="dv">{t('foot.KL')}</span><span className="sl">x10</span>
+             <span className="dv">{t('foot.DVTTPS')}</span><span className="sl">x1</span>
+             <span className="dv">{t('foot.KL')}</span><span className="sl">x1</span>
+             <span className="dv">{t('foot.DVTTKL')}</span><span className="sl">x1</span>
           </div>
-          <button className="btnl"><i className="fa fa-shopping-cart"></i> Đặt lệnh</button>
-          <button className="btng"><i class="fas fa-chart-line"></i> Bảng giá</button>
+          <button className="btnl"><i className="fa fa-shopping-cart"></i> {t('foot.btn_setcommand')}</button>
+          <button className="btng"><i class="fas fa-chart-line"></i>{t('foot.btn_priceboard')}</button>
           </div>
         </div>
       </div>
     </div>
+    
   )
 }
 
