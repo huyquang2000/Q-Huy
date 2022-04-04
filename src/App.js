@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Login from './components/LoginService/Login';
 import { Routes, Route} from 'react-router-dom';
-import Home from './components/HomePage/Home';
+import Home from './components/priceBoard/Body/main/home';
 import {path} from './const/path'
 import {PrivateRouteHome,PrivateRouteLogin} from './components/PrivateRouter'
 

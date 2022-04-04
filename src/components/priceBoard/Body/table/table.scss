@@ -1,8 +1,12 @@
+@import '../../../../assets/Themedefinition/theme.scss';
+
 //dark
 .table-dark{
+    @include themify($themes){
+        background-color: themed('backgroundTable');
+    }
     width: 100%;
     text-align: center;
-    background-color: black;
     font-weight: 300;
     font-size: .7rem;
     border: 1px solid #333333;
@@ -19,7 +23,6 @@
     td, th{
         border: 1px solid #343434;
         padding: 6px;
-        width: 100%;
         font-weight: 400;
 
     }
@@ -60,22 +63,28 @@
 
 .td-symbol{
     color:#fd0000 ;
+    
+    
 }
 
 .td-symbol:nth-child(2n+1){
     color:#08e003 ;
+    
 }
 
 .td-thamchieu{
     color:#f3c117 ;
+    background-color: #8c8b8b;
 }
 
 .td-tran{
     color:#d433a9 ;
+    background-color: #8c8b8b;
 }
 
 .td-san{
     color:#1eeeee;
+    background-color: #8c8b8b;
 }
 
 .red-color{

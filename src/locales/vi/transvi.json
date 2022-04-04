@@ -1,39 +1,90 @@
 {
-    "head": {
-        "1": "KL thỏa thuận: ",
-        "3": "KLGD lô lẻ: ",
-        "2": "1.984.252 tỷ",
-        "4":"12.558.999 tỷ",
-        "5":"GT thoả thuận: ",
-        "6":"1.235.468 tỷ",
-        "7": "KLGD: ",
-        "8":"61.192.002 tỷ",
-        "9": "GTGD: ",
-        "theme": "Giao diện",
-        "light": "Sáng",
-        "dark": "Tối",
-        "lang": "Ngôn ngữ",
-        "logout": "Đăng xuất"
-    },
     "login": {
         "account_input": "Tài khoản",
         "password_input": "Mật khẩu",
-        "error": "Sai tài khoản hoặc mật khẩu",
+        "error": "Sai tên tài khoản hoặc mật khẩu",
         "try_again": "Vui lòng thử lại",
         "btn_login": "Đăng nhập",
         "open_newacc":"Mở tài khoản mới",
         "forgot_pw": "Quên mật khẩu ? ",
-        "vi_lang": "Tiếng Việt",
-        "en_lang": "Tiếng Anh",
-        "contact": "Liên hệ: (84-24) 3928 8080 - ext.699/(84-28) 3914 6888"
+        "vi_lang": "Tiếng việt",
+        "en_lang": "Tiếng anh",
+        "contact": "Contact: (84-24) 3928 8080 - ext.699/(84-28) 3914 6888"
     },
-    "foot": {
-        "btn_setcommand": "Đặt lệnh",
-        "btn_priceboard": "Bảng giá",
-        "DVCS": "Đơn vị cơ sở : Giá",
-        "KL": "Khối lượng",
-        "DVTTPS": "- Đơn vị TT phái sinh : Giá",
-        "DVTTKL" : "- Đơn vị TT khối lẻ : Khối lượng"
-
+    "home": {
+        "btn_logout": "Đăng xuất",
+        "theme": "Giao diện",
+        "dark_theme": "Tối",
+        "light_theme": "Sáng",
+        "languages": "Ngôn ngữ",
+        "language_vie": "Tiếng Việt",
+        "language_eng": "Tiếng Anh"
+    },
+    "title": {
+        "document_title_home": "Bảng giá BVSC",
+        "document_title_login": "Đăng nhập"
+    },
+    "marquee": {
+        "GTTT": "GT thoả thuận",
+        "VLGT": "KL thoả thuận",
+        "KLGDTT": "KLGD lô lẻ",
+        "KLGD": "KLGD",
+        "KLTT": "KLTT",
+        "KLTT_GT": "Tổng KLTT",
+        "billion": "tỷ"
+    },
+    "navbar": {
+        "search_input": "Tìm kiếm mã CK",
+        "favorite_symbols": "Danh mục theo dõi",
+        "stock_screening": "Sàng lọc cổ phiếu",
+        "derivatives": "Phái sinh",
+        "warrant": "Chứng quyền",
+        "bonds": "Trái phiếu doanh nghiệp",
+        "odd_lot": "Lô lẻ",
+        "slide_show": "Chế độ trình chiếu",
+        "hideshow_chart": "Ẩn/Hiện biểu đồ",
+        "threedot": "Ẩn/Hiện các cột",
+        "follow_list": "Danh mục theo dõi",
+        "hose_titlte": "Sàn giao dịch chứng khoán TP Hồ Chí Minh",
+        "HNX_title": "Sàn giao dịch chứng khoán Hà Nội",
+        "Upcom_title": "Các công ty đại chúng chưa niêm yết"
+    },
+    "table": {
+        "symbol": "Mã CK",
+        "ref": "TC",
+        "celi": "Trần",
+        "floor": "Sàn",
+        "bid": "Bên bán",
+        "prc3": "Giá 3",
+        "prc2": "Giá 2",
+        "prc1": "Giá 1",
+        "vol3": "KL 3",
+        "vol2": "KL 2",
+        "vol1": "KL 1",
+        "matched": "Khớp lệnh",
+        "price": "Giá",
+        "vol": "KL",
+        "percent": "%",
+        "ask": "Bên bán",
+        "total_vol": "Tổng KL",
+        "high": "Cao",
+        "average": "TB",
+        "low": "Thấp",
+        "remain": "Dư",
+        "foreign": "ĐTNN",
+        "bought": "Mua",
+        "sold": "Bán"
+    },
+    "footer": {
+        "stock_market": "Đơn vị TT cơ sở: Giá: ",
+        "volumn": "Khối lượng",
+        "derivative_market": "Đơn vị TT phái sinh: Giá: ",
+        "oddlot_market": "Đơn vị TT lô lẻ",
+        "price_board": "Bảng giá",
+        "set_order": "Đặt lệnh"
     }
 }
+
+
+
+

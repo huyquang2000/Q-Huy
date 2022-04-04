@@ -1,25 +1,25 @@
 import React, { useState } from 'react'
-import './Table.scss';  
-import Hose from '../hose'
-import VN30 from '../vn30'
-import HNX from '../hnx'
-import UPCOM from '../upcome'
-import {useSelector } from 'react-redux';
+import './table.scss';  
+import TableHOSE from './tableHOSE'
+import TableVN30 from './tableVN30'
+import TableHNX from './tableHNX'
+import TableUPCOM from './tableUPCOM'
+import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
 function Table() {
   const Table_tab = useSelector((state) => state.Login.table_tab)
   const themeMode = useSelector((state) => state.Theme.themeMode)
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const Which_tab  = () => {
     if(Table_tab === 'Hose'){
-      return (<Hose/>)
+      return (<TableHOSE/>)
     }else if(Table_tab === 'VN30'){
-      return (<VN30/>)
+      return (<TableVN30/>)
     }else if(Table_tab === 'HNX'){
-      return (<HNX/>)
+      return (<TableHNX/>)
     }else{
-      return( <UPCOM/>)
+      return( <TableUPCOM/>)
     }
   }
 
@@ -59,8 +59,8 @@ function Table() {
             <th scope="col">{t('table.high')}</th>
             <th scope="col">{t('table.average')}</th>
             <th scope="col">{t('table.low')}</th>
-            <th scope="col">{t('table.bid')}</th>
-            <th scope="col">{t('table.ask')}</th>
+            <th scope="col">{t('table.bought')}</th>
+            <th scope="col">{t('table.sold')}</th>
             <th scope="col">{t('table.bought')}</th>
             <th scope="col">{t('table.sold')}</th>
           </tr>
