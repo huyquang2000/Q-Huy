@@ -17,7 +17,7 @@ function NavBar() {
     const [table, setTable] = useState(Table_tab)
     const TabHoseVn30 = useSelector((state) => state.Login.TabName_)
     const [tabName, settabName] = useState(TabHoseVn30)
-
+  
     const SettableHose = () => {
         setTable('Hose')
         dispatch(SwitchTab('Hose'))

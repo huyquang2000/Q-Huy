@@ -1,6 +1,7 @@
 import React from 'react'
 import './modalBox.scss'
 function ModalBox() {
+  
   return (
     <div className='Modal-box'>
       <h2>Ẩn/Hiển các cột</h2>

@@ -2,9 +2,7 @@
 
 //dark
 .table-dark{
-    @include themify($themes){
-        background-color: themed('backgroundTable');
-    }
+    background-color: #000000;
     width: 100%;
     text-align: center;
     font-weight: 300;
@@ -13,6 +11,7 @@
     border-collapse: collapse;
     margin-top: 195px;
     transition: .4s;
+    color: #f0f8ff;
 
     .fix-sticky{
         position: sticky;     
@@ -74,19 +73,54 @@
 
 .td-thamchieu{
     color:#f3c117 ;
-    background-color: #8c8b8b;
+    
+
 }
 
 .td-tran{
     color:#d433a9 ;
-    background-color: #8c8b8b;
+    
+
 }
 
 .td-san{
     color:#1eeeee;
-    background-color: #8c8b8b;
+
+}
+.bg3Col{
+    @include themify($themes){
+        background-color: themed('bg3col');
+        
+    }
 }
 
 .red-color{
     color:#fd0000 ;
+}
+
+.green-color{
+    color: #08e003 ;
+}
+
+.yellow-color{
+    color: #f3c117 ;
+}
+
+.purple-color{
+    color: #d433a9 ;
+}
+
+.blue-color{
+    color: #00c5c5
+}
+
+.noneChangeColor{
+    @include themify($themes){
+        color: themed('totalTrading');
+    }
+    text-align: right;
+}
+
+.backGroundChange{
+    background-color: #08e003;
 }
