@@ -3,6 +3,7 @@ import './table.scss';
 import hnx_instruments from '../../../../Data/pbData/hnx_ins.json'
 
 export default function TableHNX() {
+    const listPropertyChange = ['bidPrice3','bidPrice2','bidPrice1','offerPrice1','offerPrice2','offerPrice3']
     
     const CaculatePB = (item, percent, fix) => {
         if (item !== 0 && item !== undefined && item !== null && item !== NaN) {
@@ -61,15 +62,16 @@ export default function TableHNX() {
             if (data.bidPrice2 && data.bidPrice3 &&
                 data.offerPrice1 && data.offerPrice2 && data.offerPrice3 &&
                 data.closePrice != undefined) {
+                    let key = randomValue(data.ceiling, data.floor)
                 return (
                     setData(get20Data.slice(0, 10)),
-                    data.bidPrice3 = randomValue(data.floor, data.ceiling),
-                    data.bidPrice2 = randomValue(data.floor, data.ceiling),
-                    data.bidPrice1 = randomValue(data.floor, data.ceiling),
-                    data.offerPrice1 = randomValue(data.floor, data.ceiling),
-                    data.offerPrice2 = randomValue(data.floor, data.ceiling),
-                    data.offerPrice3 = randomValue(data.floor, data.ceiling),
-                    data.closePrice = randomValue(data.floor, data.ceiling)
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data),
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data),
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data),
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data),
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data),
+                    data[listPropertyChange+'_class_hightlight'] = randomValue(data[key], key,data)
+
                 )
             } else {
                 return ''
@@ -80,6 +82,18 @@ export default function TableHNX() {
     useEffect(() => {
         setInterval(ChangeData, 1000)
     }, [])
+   
+        const [backgroundColor, setBackgroundColor] = useState("");
+        const [textColor, setTextColor] = useState("");
+      
+        useEffect(() => {
+          const color = setColor();
+          setBackgroundColor(`background_${color}`);
+          setTextColor(color);
+          setTimeout(() => {
+            setBackgroundColor("");
+          }, 2000);
+        }, []);
 
     const TableHNX = HNXData.map((item) => {
         return (
@@ -113,6 +127,7 @@ export default function TableHNX() {
                         <td className="noneChangeColor">{ }</td>
                         <td className="noneChangeColor">{CaculatePB(item.foreignBuy, 1000, 2)}</td>
                         <td className="noneChangeColor">{CaculatePB(item.foreignSell, 1000, 2)}</td>
+                        <td className={[backgroundColor, textColor].join(" ")}></td>
                     </tr>
                 </tbody>
             </>

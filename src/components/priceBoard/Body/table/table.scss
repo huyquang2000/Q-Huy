@@ -123,4 +123,37 @@
 
 .backGroundChange{
     background-color: #08e003;
+    
 }
+@keyframes green-background-fade {
+    50% {
+      background: rgba(0, 128, 0, 0.3);
+    }
+    100% {
+      background: #fff;
+    }
+  }
+  
+  @keyframes red-background-fade {
+    50% {
+      background: rgba(128, 0, 0, 0.3);
+    }
+    100% {
+      background: #fff;
+    }
+  }
+  
+  .background_green-color {
+    animation: green-background-fade 2s forwards;
+  }
+  .background_red-color {
+    animation: red-background-fade 2s forwards;
+  }
+  
+  .green-color {
+    color: green;
+  }
+  .red-color {
+    color: red;
+  }
+  
